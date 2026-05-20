@@ -459,6 +459,38 @@
             font-size: 0.95rem !important;
         }
     }
+
+    .attractive-insight-box {
+    background: rgba(30, 41, 59, 0.5); /* خلفية داكنة خفيفة */
+    border: 1px solid var(--accent-cyan);
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.example-label {
+    color: var(--accent-cyan);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+.insight-text {
+    margin-top: 10px;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+.var-highlight {
+    background: #0f172a;
+    color: #f8e71c; /* لون أصفر تقني */
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+    border: 1px solid rgba(248, 231, 28, 0.2);
+}
     </style>
 </head>
 <body>
@@ -486,39 +518,42 @@
         </button>
     </header>
 
-    <section id="stylesheet" class="screen reveal">
-        <div class="section-card-wrapper">
-            <div class="content-wrapper">
-                <div class="text-side">
-                    <h2>The Stylesheet Transformation</h2>
-                    <p>
-                        I bypassed manufacturer-locked templates by re-engineering the <b>Internal Stylesheets</b>. By aligning system variables with <b>WHO Classifications</b>, I enabled specialized reporting for:
+ <section id="stylesheet" class="screen reveal">
+    <div class="section-card-wrapper">
+        <div class="content-wrapper">
+            <div class="text-side">
+                <h2>The Stylesheet Transformation</h2>
+                <p>
+                    I bypassed manufacturer-locked templates by re-engineering the <b>Internal Stylesheets</b>. By aligning system variables with <b>WHO Classifications</b>, I enabled specialized reporting for:
+                </p>
+                
+                <div class="attractive-insight-box">
+                    <span class="example-label">Technical Example</span>
+                    <p class="insight-text">
+                        As shown in image, we change the variable 
+                        <code class="var-highlight">&lt;image chart&gt;</code> 
+                        from blue Z-score chart to WHO classification chart.
                     </p>
-                    
-                    <div class="attractive-insight-box">
-                        <span class="example-label">Technical Example</span>
-                        <p>
-                            as shown in image, we change the variable &lt;image chart&gt; from blue Z-score chart to WHO classification chart.
-                        </p>
-                        
-                        <div class="reporting-flow-container">
-                            <span class="flow-title"><i class="fas fa-file-medical-alt"></i> Report Generated:</span>
-                            <div class="flow-tags-wrapper">
-                                <span class="flow-tag">Postmenopausal</span>
-                                <span class="flow-tag">Premenopausal</span>
-                                <span class="flow-tag">Male &gt;50</span>
-                                <span class="flow-tag">Male &lt;50</span>
-                                <span class="flow-tag">Pediatric</span>
-                            </div>
-                        </div>
+                </div>
+
+                <div class="reporting-flow-container">
+                    <span class="flow-title"><i class="fas fa-file-medical-alt"></i> Report Generated:</span>
+                    <div class="flow-tags-wrapper">
+                        <span class="flow-tag">Postmenopausal</span>
+                        <span class="flow-tag">Premenopausal</span>
+                        <span class="flow-tag">Male &gt;50</span>
+                        <span class="flow-tag">Male &lt;50</span>
+                        <span class="flow-tag">Pediatric</span>
                     </div>
                 </div>
-                <div class="image-side">
-                    <img src="dxa-stylesheet.png" alt="WHO Classification Logic" class="zoomable">
-                </div>
             </div>
-        </div>
-    </section>
+            
+            <div class="image-side">
+                <img src="dxa-stylesheet.png" alt="WHO Classification Logic" class="zoomable">
+            </div>
+            
+        </div> </div> </section>
+
 
     <section id="pediatric" class="screen reveal">
         <div class="section-card-wrapper">
